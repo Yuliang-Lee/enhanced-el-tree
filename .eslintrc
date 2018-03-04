@@ -1,0 +1,46 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {},
+  "rules": {
+    "arrow-parens": "off",
+    "valid-jsdoc": "off",
+    "eol-last": "off",
+    "array-bracket-spacing": "off",
+    "no-unused-vars": "off",
+    "newline-per-chained-call": "off",
+    "strict": "off",
+    "no-console": "off",
+    "no-else-return": "off",
+    "no-irregular-whitespace": [
+      "error",
+      {
+        "skipComments": true
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline"
+      }
+    ],
+    "vue/require-default-prop": "off",
+    "vue/max-attributes-per-line": "off"
+  }
+}

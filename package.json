@@ -1,0 +1,51 @@
+{
+  "name": "@xlaoyu/enhanced-el-tree",
+  "version": "1.0.0",
+  "private": false,
+  "description": "enhanced element-ui's tree component",
+  "main": "./dist/enhanced-el-tree.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "webpack --progress --config ./build/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuliang-Lee/enhanced-el-tree.git"
+  },
+  "keywords": [
+    "vue",
+    "tree",
+    "el-tree",
+    "enhanced"
+  ],
+  "author": "xlaoyu <frank_yll@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yuliang-Lee/enhanced-el-tree/issues"
+  },
+  "homepage": "https://github.com/Yuliang-Lee/enhanced-el-tree#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.5.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "element-ui": "^2.1.0",
+    "eslint": "^4.17.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-vue": "^4.2.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "vue": "^2.5.13",
+    "vue-loader": "^14.1.1",
+    "vue-style-loader": "^4.0.2",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.11.0"
+  }
+}
