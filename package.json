@@ -6,8 +6,8 @@
   "main": "./dist/enhanced-el-tree.min.js",
   "scripts": {
     "lint": "eslint src",
-    "build": "webpack --progress --config ./build/webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress -p --config ./build/webpack.config.js",
+    "test": "cross-env NODE_ENV=test karma start test/karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -29,16 +29,28 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^4.1.5",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.5.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.3",
     "css-loader": "^0.28.9",
     "element-ui": "^2.1.0",
     "eslint": "^4.17.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-vue": "^4.2.2",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^2.0.13",
+    "mocha": "^5.0.2",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "uglifyjs-webpack-plugin": "^1.1.8",
@@ -47,5 +59,6 @@
     "vue-style-loader": "^4.0.2",
     "vue-template-compiler": "^2.5.13",
     "webpack": "^3.11.0"
-  }
+  },
+  "dependencies": {}
 }
