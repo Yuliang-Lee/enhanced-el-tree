@@ -73,11 +73,7 @@ import EnhancedElTree from '@xlaoyu/enhanced-el-tree';
 
 Vue@2.5.13
 
-Element@2.1.0
-
-## TODO
-
-compatible with `element@latest`
+Element@2.2.1
 
 ## License
 
