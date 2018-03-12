@@ -8,6 +8,7 @@ function resolve(dir) {
 
 module.exports = {
   devtool: '#inline-source-map',
+  mode: 'development',
   output: {
     path: resolve('dist'),
     filename: '[name].js',

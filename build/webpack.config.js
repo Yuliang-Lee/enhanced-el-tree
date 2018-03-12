@@ -1,16 +1,18 @@
 const path = require('path');
 const vueLoaderConfig = require('./vue-loader.conf');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 function resolve(dir) {
   return path.resolve(__dirname, '..', dir);
 }
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
   output: {
     path: resolve("dist"),
-    filename: 'enhanced-el-tree.js',
+    filename: 'enhanced-el-tree.min.js',
     library: 'EnhancedElTree',
     libraryTarget: 'umd'
   },
@@ -42,14 +44,15 @@ module.exports = {
       }
     ]
   },
-  // plugins: [
-  //   new UglifyJsPlugin({
-  //     parallel: true,
-  //     uglifyOptions: {
-  //       ecma: 8,
-  //     }
-  //   })
-  // ],
+  plugins: [
+    new UglifyJsPlugin({
+      parallel: true,
+      uglifyOptions: {
+        ecma: 8,
+      }
+    }),
+    new BundleAnalyzerPlugin()
+  ],
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
