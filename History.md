@@ -1,4 +1,10 @@
 
+v1.1.1 / 2018-03-12
+==================
+
+  * deps: update to webpack 4, output minimal file
+  * docs: update readme
+
 v1.1.0 / 2018-03-07
 ==================
 
