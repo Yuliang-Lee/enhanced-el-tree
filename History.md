@@ -1,4 +1,9 @@
 
+v1.1.2 / 2018-03-28
+==================
+
+  * fix: horizontal mode also render normal child node components
+
 v1.1.1 / 2018-03-12
 ==================
 
