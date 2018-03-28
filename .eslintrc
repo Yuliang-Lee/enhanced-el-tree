@@ -45,6 +45,7 @@
     ],
     "vue/require-default-prop": "off",
     "vue/max-attributes-per-line": "off",
-    "vue/this-in-template": "off"
+    "vue/this-in-template": "off",
+    "vue/attributes-order": "off"
   }
 }

@@ -41,11 +41,11 @@
         class="el-tree-node__expand-icon el-icon-caret-right right-icon"
         :class="{ 'is-leaf': node.isLeaf }"/>
     </div>
-    <el-collapse-transition v-if="!tree.$props.horizontal">
+    <el-collapse-transition>
       <div
         class="el-tree-node__children"
         v-if="!renderAfterExpand || childNodeRendered"
-        v-show="expanded"
+        v-show="!tree.$props.horizontal && expanded"
         role="group"
         :aria-expanded="expanded"
       >
