@@ -1,5 +1,10 @@
 # enhanced-el-tree
 
+[![Vue 2.x](https://img.shields.io/badge/Vue-2.x-brightgreen.svg)](https://vuejs.org/v2/guide/)
+[![npm](https://img.shields.io/npm/v/@xlaoyu/enhanced-el-tree.svg)](https://www.npmjs.com/package/@xlaoyu/enhanced-el-tree)
+[![npm-downloades](https://img.shields.io/npm/dm/@xlaoyu/enhanced-el-tree.svg)](https://www.npmjs.com/package/@xlaoyu/enhanced-el-tree)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Yuliang-Lee/enhanced-el-tree/blob/master/LICENSE)
+
 Base on element-ui's [tree component](http://element.eleme.io/#/en-US/component/tree), add some useful function and `horizontal-mode`
 
 ## Futures
