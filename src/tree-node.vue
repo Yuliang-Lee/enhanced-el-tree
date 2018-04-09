@@ -24,20 +24,29 @@
         class="el-tree-node__expand-icon el-icon-caret-right"
         @click.stop="handleExpandIconClick"
         :class="{ 'is-leaf': node.isLeaf, expanded: !node.isLeaf && expanded }"/>
-      <el-checkbox
-        v-if="showCheckbox"
-        v-model="node.checked"
-        :indeterminate="node.indeterminate"
-        :disabled="!!node.disabled"
-        @click.native.stop
-        @change="handleCheckChange"
-      />
+      <template v-if="showCheckbox">
+        <el-checkbox
+          v-if="tree.$props.openWhenCheck"
+          v-model="node.checked"
+          :indeterminate="node.indeterminate"
+          :disabled="!!node.disabled"
+          @change="handleCheckChange"
+        />
+        <el-checkbox
+          v-else
+          v-model="node.checked"
+          :indeterminate="node.indeterminate"
+          :disabled="!!node.disabled"
+          @click.native.stop
+          @change="handleCheckChange"
+        />
+      </template>
       <span
         v-if="node.loading"
         class="el-tree-node__loading-icon el-icon-loading"/>
       <node-content :node="node"/>
       <span
-        v-if="node.store.horizontal"
+        v-if="tree.$props.horizontal"
         class="el-tree-node__expand-icon el-icon-caret-right right-icon"
         :class="{ 'is-leaf': node.isLeaf }"/>
     </div>

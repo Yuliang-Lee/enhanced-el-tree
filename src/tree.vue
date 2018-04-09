@@ -121,6 +121,10 @@ export default {
     treeNodeWrapperClass: {
       type: String,
       default: ''
+    },
+    openWhenCheck: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -201,7 +205,7 @@ export default {
       defaultExpandedKeys: this.defaultExpandedKeys,
       autoExpandParent: this.autoExpandParent,
       defaultExpandAll: this.defaultExpandAll,
-      filterNodeMethod: this.filterNodeMethod
+      filterNodeMethod: this.filterNodeMethod,
     });
 
     this.root = this.store.root;

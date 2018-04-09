@@ -9,14 +9,22 @@ Base on element-ui's [tree component](http://element.eleme.io/#/en-US/component/
 
 ## Futures
 
-### horizontal mode
+### Horizontal Mode
 
 Or can be said that is multiple-cascader component.Try it [Demo](https://codesandbox.io/s/5z70p4wv84)
 ![demo](https://user-images.githubusercontent.com/6936358/36945153-9fe4b352-1fe4-11e8-8c88-57e1916568f6.gif)
 
 **restrict**：when use `horizontal mode`,some origin tree property would not take efffect, eg: _indent_, _accordion_ etc.
 
-### several useful methods
+### Extra Attributes
+
+| Attribute | Description | Type | Accepted Values | Default |
+|:-----|:-----|:-----|:-----|:-----|
+| horizontal | whether to activate horizontal mode | Boolean | - | false |
+| tree-node-wrapper-class | add these class to horizontal block wrapper when activate horizontal mode | String | - | - |
+| open-when-check | click checkbox to behave like a click tree node | Boolean | - | false |
+
+### Extra Useful Methods
 
 | Name | Description | Parameters |
 |:-----|:-----|:-----|
