@@ -1,4 +1,10 @@
 
+v1.2.0 / 2018-04-09
+==================
+
+  * feat: add attribute 'open-when-check'
+  * docs: add badge
+
 v1.1.2 / 2018-03-28
 ==================
 
